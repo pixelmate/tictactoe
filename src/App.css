@@ -119,7 +119,7 @@ a {
   position: absolute;
   content: '';
   display: block;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
   left: 90px;
   top: 20px;
   width: 20px;
@@ -242,12 +242,12 @@ body:not(.mobile) .scores:hover .swap {
 }
 @-moz-keyframes border-blink {
   50% {
-    border-color: #000;
+    border-color: rgb(255, 0, 0);
   }
 }
 @keyframes border-blink {
   50% {
-    border-color: #000;
+    border-color: rgb(255, 0, 0);
   }
 }
 @-webkit-keyframes blink {
@@ -279,10 +279,12 @@ body:not(.mobile) .scores:hover .swap {
   from {
     -moz-transform: scale(0.3);
     transform: scale(0.3);
+    color: #000000;
   }
   to {
     -moz-transform: scale(1);
     transform: scale(1);
+    color: red;
   }
 }
 @keyframes appear {
@@ -291,6 +293,7 @@ body:not(.mobile) .scores:hover .swap {
   }
   to {
     transform: scale(1);
+    color: red;
   }
 }
 
@@ -298,10 +301,12 @@ body:not(.mobile) .scores:hover .swap {
   -webkit-animation: border-blink 0.3s steps(1) 3;
   -moz-animation: border-blink 0.3s steps(1) 3;
   animation: border-blink 0.3s steps(1) 3;
+  color: red;
 }
 .square .o.blink,
 .square .x.blink {
   -webkit-animation: blink 0.3s steps(1) 3;
   -moz-animation: blink 0.3s steps(1) 3;
   animation: blink 0.3s steps(1) 3;
+  color: red;
 }
