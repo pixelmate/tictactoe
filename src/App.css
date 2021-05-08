@@ -7,6 +7,135 @@
   pointer-events: none;
 }
 
+.game h1 {
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.square {
+  display: block;
+  position: absolute;
+}
+.top {
+  /* background-color: red; */
+  top: 0;
+  bottom: 66.66%;
+  left: 33.33%;
+  right: 33.33%;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  /* border-top: 2px solid; */
+  border-bottom: 2px solid;
+}
+.top-left {
+  /* background-color: blue; */
+  top: 0;
+  bottom: 66.66%;
+  left: 0;
+  right: 66.66%;
+  border-right: 2px solid;
+  /* border-left: 2px solid; */
+  /* border-top: 2px solid; */
+  border-bottom: 2px solid;
+}
+.top-right {
+  /* background-color: grey; */
+  top: 0;
+  bottom: 66.66%;
+  left: 66.66%;
+  right: 0;
+  /* border-right: 2px solid; */
+  border-left: 2px solid;
+  /* border-top: 2px solid; */
+  border-bottom: 2px solid;
+}
+.middle-left {
+  /* background-color: blue; */
+  top: 33.33%;
+  bottom: 33.33%;
+  left: 66.66%;
+  right: 0;
+  border-right: 2px solid;
+  /* border-left: 2px solid; */
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.middle {
+  /* background-color: grey; */
+  top: 33.33%;
+  bottom: 33.33%;
+  left: 33.33%;
+  right: 33.33%;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.middle-right {
+  /* background-color: green; */
+  top: 33.33%;
+  bottom: 33.33%;
+  left: 0;
+  right: 66.66%;
+  /* border-right: 2px solid; */
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.bottom-left {
+  /* background-color: red; */
+  top: 66.66%;
+  bottom: 0;
+  left: 0;
+  right: 66.66%;
+  border-right: 2px solid;
+  /* border-left: 2px solid; */
+  border-top: 2px solid;
+  /* border-bottom: 2px solid; */
+}
+.bottom {
+  /* background-color: black; */
+  top: 66.66%;
+  bottom: 0%;
+  left: 33.33%;
+  right: 33.33%;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  /* border-bottom: 2px solid; */
+}
+
+.bottom-right {
+  /* background-color: aqua; */
+  bottom: 0;
+  left: 66.66%;
+  right: 0;
+  top: 66.66%;
+  /* border-right: 2px solid; */
+  border-left: 2px solid;
+  border-top: 2px solid;
+  /* border-bottom: 2px solid; */
+}
+.board {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -370px;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  /* background-color: red; */
+  border: 2px solid;
+}
+
+.Reset_button {
+  /* background-color: red; */
+  margin-top: 85vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
