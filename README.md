@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Tic tac toe Game By Prince Kumar in ReactJs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can clone or download this game via Github.
+This game is Live on Netlify: Open [https://hopeful-heyrovsky-879c92.netlify.app/](https://hopeful-heyrovsky-879c92.netlify.app/)
 
 ## Available Scripts
 
