@@ -29,8 +29,17 @@ class App extends React.Component {
       return;
     }
 
+    // var playerMove;
+    let nextMove = [];
+
     this.refs['block' + index].className = 'x';
     this.refs['block' + index].classList.add('x');
+    // console.log(this.classList.value);
+    // playerMove.push(index);
+    nextMove.push(index);
+    //  playerMove.push(index);
+
+    console.log(nextMove);
     this.checkForWinner();
     this.setState(
       {
@@ -67,6 +76,7 @@ class App extends React.Component {
       if (this.refs['block' + i].className.length === 0) {
         notBlueOrRed.push(i);
         isAvailable = true;
+        // console.log(notBlueOrRed);
       }
     }
 
@@ -98,6 +108,9 @@ class App extends React.Component {
     }
   };
 
+  computerNextMove = () => {
+    const playerMoves = [];
+  };
   checkForWinner = () => {
     const combinationCollection = [
       [1, 2, 3],
